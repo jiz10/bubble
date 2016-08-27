@@ -13,4 +13,12 @@ public class Validacion {
      */
     @ManyToOne
     private Usuario usuario;
+
+    /**
+     */
+    private String userName;
+
+    /**
+     */
+    private String password;
 }

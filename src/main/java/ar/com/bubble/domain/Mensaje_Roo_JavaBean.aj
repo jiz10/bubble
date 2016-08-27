@@ -10,12 +10,12 @@ import java.util.Set;
 
 privileged aspect Mensaje_Roo_JavaBean {
     
-    public Usuario Mensaje.getUsuario() {
-        return this.usuario;
+    public Usuario Mensaje.getAutor() {
+        return this.autor;
     }
     
-    public void Mensaje.setUsuario(Usuario usuario) {
-        this.usuario = usuario;
+    public void Mensaje.setAutor(Usuario autor) {
+        this.autor = autor;
     }
     
     public Set<Tag> Mensaje.getTags() {

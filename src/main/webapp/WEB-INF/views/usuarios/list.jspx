@@ -5,7 +5,7 @@
     <page:list id="pl_ar_com_bubble_domain_Usuario" items="${usuarios}" z="xQA/0npKUrhV4mdcmkLXbiAPWGE=">
         <table:table data="${usuarios}" id="l_ar_com_bubble_domain_Usuario" path="/usuarios" z="4+uB/XKYduuG2psSPJvdUDUwCpc=">
             <table:column id="c_ar_com_bubble_domain_Usuario_nombre" property="nombre" z="QVpfemE1Sl4EXhQWXZPVKgYYcMc="/>
-            <table:column id="c_ar_com_bubble_domain_Usuario_userName" property="userName" z="IeNa5cWL0Z0AszPr5q0VIa/Rrgg="/>
+            <table:column id="c_ar_com_bubble_domain_Usuario_apellido" property="apellido" z="cVu1lWr0/b9ZV6sQNQ5qYulOTlQ="/>
         </table:table>
     </page:list>
 </div>

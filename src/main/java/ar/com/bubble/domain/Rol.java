@@ -13,4 +13,8 @@ public class Rol {
      */
     @ManyToOne
     private Usuario usuario;
+
+    /**
+     */
+    private String name;
 }

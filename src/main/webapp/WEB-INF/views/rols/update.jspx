@@ -4,5 +4,6 @@
     <jsp:output omit-xml-declaration="yes"/>
     <form:update id="fu_ar_com_bubble_domain_Rol" modelAttribute="rol" path="/rols" versionField="Version" z="5M3QZnxmDZgxibLnwExuRbvri9c=">
         <field:select field="usuario" id="c_ar_com_bubble_domain_Rol_usuario" itemValue="id" items="${usuarios}" path="/usuarios" z="ySGxhX00SXVpDWfr+HOw3VqtTn8="/>
+        <field:input field="name" id="c_ar_com_bubble_domain_Rol_name" z="zEDBCV1BzPm9HPiOf4GXCfl9Hrw="/>
     </form:update>
 </div>

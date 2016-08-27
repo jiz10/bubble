@@ -44,7 +44,7 @@ privileged aspect ApplicationConversionServiceFactoryBean_Roo_ConversionService 
     public Converter<Rol, String> ApplicationConversionServiceFactoryBean.getRolToStringConverter() {
         return new org.springframework.core.convert.converter.Converter<ar.com.bubble.domain.Rol, java.lang.String>() {
             public String convert(Rol rol) {
-                return "(no displayable fields)";
+                return new StringBuilder().append(rol.getName()).toString();
             }
         };
     }
@@ -92,7 +92,7 @@ privileged aspect ApplicationConversionServiceFactoryBean_Roo_ConversionService 
     public Converter<Usuario, String> ApplicationConversionServiceFactoryBean.getUsuarioToStringConverter() {
         return new org.springframework.core.convert.converter.Converter<ar.com.bubble.domain.Usuario, java.lang.String>() {
             public String convert(Usuario usuario) {
-                return new StringBuilder().append(usuario.getNombre()).append(' ').append(usuario.getUserName()).toString();
+                return new StringBuilder().append(usuario.getApellido()).append(' ').append(usuario.getNombre()).toString();
             }
         };
     }
@@ -116,7 +116,7 @@ privileged aspect ApplicationConversionServiceFactoryBean_Roo_ConversionService 
     public Converter<Validacion, String> ApplicationConversionServiceFactoryBean.getValidacionToStringConverter() {
         return new org.springframework.core.convert.converter.Converter<ar.com.bubble.domain.Validacion, java.lang.String>() {
             public String convert(Validacion validacion) {
-                return "(no displayable fields)";
+                return new StringBuilder().append(validacion.getUserName()).append(' ').append(validacion.getPassword()).toString();
             }
         };
     }

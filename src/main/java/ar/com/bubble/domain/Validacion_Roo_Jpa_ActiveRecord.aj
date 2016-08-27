@@ -14,7 +14,7 @@ privileged aspect Validacion_Roo_Jpa_ActiveRecord {
     @PersistenceContext
     transient EntityManager Validacion.entityManager;
     
-    public static final List<String> Validacion.fieldNames4OrderClauseFilter = java.util.Arrays.asList("usuario");
+    public static final List<String> Validacion.fieldNames4OrderClauseFilter = java.util.Arrays.asList("usuario", "userName", "password");
     
     public static final EntityManager Validacion.entityManager() {
         EntityManager em = new Validacion().entityManager;

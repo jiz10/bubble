@@ -14,7 +14,7 @@ privileged aspect Rol_Roo_Jpa_ActiveRecord {
     @PersistenceContext
     transient EntityManager Rol.entityManager;
     
-    public static final List<String> Rol.fieldNames4OrderClauseFilter = java.util.Arrays.asList("usuario");
+    public static final List<String> Rol.fieldNames4OrderClauseFilter = java.util.Arrays.asList("usuario", "name");
     
     public static final EntityManager Rol.entityManager() {
         EntityManager em = new Rol().entityManager;

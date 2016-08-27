@@ -7,20 +7,20 @@ import ar.com.bubble.domain.Usuario;
 
 privileged aspect Usuario_Roo_JavaBean {
     
+    public String Usuario.getApellido() {
+        return this.apellido;
+    }
+    
+    public void Usuario.setApellido(String apellido) {
+        this.apellido = apellido;
+    }
+    
     public String Usuario.getNombre() {
         return this.nombre;
     }
     
     public void Usuario.setNombre(String nombre) {
         this.nombre = nombre;
-    }
-    
-    public String Usuario.getUserName() {
-        return this.userName;
-    }
-    
-    public void Usuario.setUserName(String userName) {
-        this.userName = userName;
     }
     
 }

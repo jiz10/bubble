@@ -16,4 +16,12 @@ privileged aspect Rol_Roo_JavaBean {
         this.usuario = usuario;
     }
     
+    public String Rol.getName() {
+        return this.name;
+    }
+    
+    public void Rol.setName(String name) {
+        this.name = name;
+    }
+    
 }

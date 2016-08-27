@@ -4,6 +4,7 @@
     <jsp:output omit-xml-declaration="yes"/>
     <form:create id="fc_ar_com_bubble_domain_Rol" modelAttribute="rol" path="/rols" render="${empty dependencies}" z="1/ymYdXMo0BIDxC7a2rCg9hAu4I=">
         <field:select field="usuario" id="c_ar_com_bubble_domain_Rol_usuario" itemValue="id" items="${usuarios}" path="/usuarios" z="ySGxhX00SXVpDWfr+HOw3VqtTn8="/>
+        <field:input field="name" id="c_ar_com_bubble_domain_Rol_name" z="zEDBCV1BzPm9HPiOf4GXCfl9Hrw="/>
     </form:create>
     <form:dependency dependencies="${dependencies}" id="d_ar_com_bubble_domain_Rol" render="${not empty dependencies}" z="G44IWUC90dTXRY3RPghirVvDrsA="/>
 </div>

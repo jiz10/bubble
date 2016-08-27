@@ -16,7 +16,7 @@ public class Mensaje {
     /**
      */
     @ManyToOne
-    private Usuario usuario;
+    private Usuario autor;
 
     /**
      */

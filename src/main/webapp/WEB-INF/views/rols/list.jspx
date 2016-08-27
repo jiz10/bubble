@@ -5,6 +5,7 @@
     <page:list id="pl_ar_com_bubble_domain_Rol" items="${rols}" z="EhbZZC4JGvrLO5HgRHAyMYIjkDg=">
         <table:table data="${rols}" id="l_ar_com_bubble_domain_Rol" path="/rols" z="yQ31yclRA8ZXGx6eMZjxTdt7Idw=">
             <table:column id="c_ar_com_bubble_domain_Rol_usuario" property="usuario" z="28uBsQlJLifjutU7Dyy9atx/GaQ="/>
+            <table:column id="c_ar_com_bubble_domain_Rol_name" property="name" z="5ljQOGboWRYzxZ9ExPN5vWb6KIQ="/>
         </table:table>
     </page:list>
 </div>

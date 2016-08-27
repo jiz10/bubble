@@ -4,5 +4,6 @@
     <jsp:output omit-xml-declaration="yes"/>
     <page:show id="ps_ar_com_bubble_domain_Rol" object="${rol}" path="/rols" z="RfEFKVOyxNjncYDIEjHlJmlr4pQ=">
         <field:display field="usuario" id="s_ar_com_bubble_domain_Rol_usuario" object="${rol}" z="P6NWJ7o6zUhse7qpsT9rXIYtU58="/>
+        <field:display field="name" id="s_ar_com_bubble_domain_Rol_name" object="${rol}" z="SLPDgDoGa9sgbFaXnUDf+YaDeUc="/>
     </page:show>
 </div>

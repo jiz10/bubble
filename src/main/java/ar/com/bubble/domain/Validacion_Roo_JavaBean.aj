@@ -16,4 +16,20 @@ privileged aspect Validacion_Roo_JavaBean {
         this.usuario = usuario;
     }
     
+    public String Validacion.getUserName() {
+        return this.userName;
+    }
+    
+    public void Validacion.setUserName(String userName) {
+        this.userName = userName;
+    }
+    
+    public String Validacion.getPassword() {
+        return this.password;
+    }
+    
+    public void Validacion.setPassword(String password) {
+        this.password = password;
+    }
+    
 }

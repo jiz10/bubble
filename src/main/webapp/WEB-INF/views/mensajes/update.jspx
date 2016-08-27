@@ -3,7 +3,7 @@
     <jsp:directive.page contentType="text/html;charset=UTF-8"/>
     <jsp:output omit-xml-declaration="yes"/>
     <form:update id="fu_ar_com_bubble_domain_Mensaje" modelAttribute="mensaje" path="/mensajes" versionField="Version" z="0thGmhDdlxWAqA/rQHzxoJaXYtM=">
-        <field:select field="usuario" id="c_ar_com_bubble_domain_Mensaje_usuario" itemValue="id" items="${usuarios}" path="/usuarios" z="u0+G/V5kClZnKZ3uCuaA4ZCvrT0="/>
         <field:select field="tags" id="c_ar_com_bubble_domain_Mensaje_tags" itemValue="id" items="${tags}" multiple="true" path="/tags" z="TQteOIy+Fji2s09RBOS7MWl/OCk="/>
+        <field:select field="autor" id="c_ar_com_bubble_domain_Mensaje_autor" itemValue="id" items="${usuarios}" path="/usuarios" z="ZSXe6zCeE/UduIAVESRit0hJcYE="/>
     </form:update>
 </div>
