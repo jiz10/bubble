@@ -26,3 +26,5 @@ field string --fieldName userName
 web mvc setup 
 web mvc jquery setup
 web mvc bootstrap setup
+security setup
+web mvc all --package ~.web

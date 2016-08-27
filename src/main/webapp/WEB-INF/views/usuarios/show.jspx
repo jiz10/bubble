@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:show id="ps_ar_com_bubble_domain_Usuario" object="${usuario}" path="/usuarios" z="cXEUwl/x2u35GFFW0Tq7gyp59KQ=">
+        <field:display field="nombre" id="s_ar_com_bubble_domain_Usuario_nombre" object="${usuario}" z="YDCpCkMRs2DL9F4tpcXDjy2jne4="/>
+        <field:display field="userName" id="s_ar_com_bubble_domain_Usuario_userName" object="${usuario}" z="k+GMiqu5r/wIf1xVxyyHh7+hVKA="/>
+    </page:show>
+</div>

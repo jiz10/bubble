@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:show id="ps_ar_com_bubble_domain_Rol" object="${rol}" path="/rols" z="RfEFKVOyxNjncYDIEjHlJmlr4pQ=">
+        <field:display field="usuario" id="s_ar_com_bubble_domain_Rol_usuario" object="${rol}" z="P6NWJ7o6zUhse7qpsT9rXIYtU58="/>
+    </page:show>
+</div>

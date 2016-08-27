@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:form="urn:jsptagdir:/WEB-INF/tags/form" xmlns:jsp="http://java.sun.com/JSP/Page" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <form:update id="fu_ar_com_bubble_domain_Usuario" modelAttribute="usuario" path="/usuarios" versionField="Version" z="DtPbZqc7MpwY4hjwAVVUu6j0qH0=">
+        <field:input field="nombre" id="c_ar_com_bubble_domain_Usuario_nombre" z="4PeLap0vpQyyaa5p61S4GR6A/EA="/>
+        <field:input field="userName" id="c_ar_com_bubble_domain_Usuario_userName" z="7rciV9AchEKm2lDkPG+ZoByevhY="/>
+    </form:update>
+</div>

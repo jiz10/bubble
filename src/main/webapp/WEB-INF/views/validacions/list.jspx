@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" xmlns:table="urn:jsptagdir:/WEB-INF/tags/form/fields" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:list id="pl_ar_com_bubble_domain_Validacion" items="${validacions}" z="UHESGQKRfkVA4DB7psQ0aWM4lYY=">
+        <table:table data="${validacions}" id="l_ar_com_bubble_domain_Validacion" path="/validacions" z="jaBCfH72SBOvF9F/XvJpadFroyU=">
+            <table:column id="c_ar_com_bubble_domain_Validacion_usuario" property="usuario" z="HCz/0HpS4R3J0URWavI0ttoJlp4="/>
+        </table:table>
+    </page:list>
+</div>
