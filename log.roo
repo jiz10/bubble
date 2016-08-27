@@ -1,0 +1,6 @@
+// Spring Roo 1.3.1.RELEASE [rev 8cb81a3] log opened at 2016-08-27 01:46:05
+project --topLevelPackage ar.com.bubble --projectName bubble --java 6 --packaging WAR
+// Spring Roo 1.3.1.RELEASE [rev 8cb81a3] log closed at 2016-08-27 01:46:06
+// Spring Roo 1.3.1.RELEASE [rev 8cb81a3] log opened at 2016-08-27 01:49:19
+jpa setup --provider HIBERNATE --database MYSQL --databaseName bubble
+// Spring Roo 1.3.1.RELEASE [rev 8cb81a3] log closed at 2016-08-27 01:53:10
