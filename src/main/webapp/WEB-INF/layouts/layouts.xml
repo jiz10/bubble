@@ -15,5 +15,11 @@
     <put-attribute name="header" value="/WEB-INF/views/header.jspx" />
     <put-attribute name="footer" value="/WEB-INF/views/footer.jspx" />
   </definition>
+  
+  <definition name="Bubble" template="/WEB-INF/layouts/Bubble.jspx">
+  </definition>
+  
+  <definition name="Tablon" template="/WEB-INF/layouts/Tablon.jspx">
+  </definition>
 
 </tiles-definitions>

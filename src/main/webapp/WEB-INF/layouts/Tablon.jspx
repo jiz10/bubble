@@ -1,9 +1,8 @@
-
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <html xmlns:c="http://java.sun.com/jsp/jstl/core" xmlns:dialog="urn:jsptagdir:/WEB-INF/tags/bootstrap/dialog/modal" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:spring="http://www.springframework.org/tags" xmlns:tiles="http://tiles.apache.org/tags-tiles" xmlns:util="urn:jsptagdir:/WEB-INF/tags/util" xmlns:bootstrap-util="urn:jsptagdir:/WEB-INF/tags/bootstrap/util">
 
 	<jsp:output doctype-root-element="HTML" doctype-system="about:legacy-compat"/>
-
+	
 	<jsp:directive.page contentType="text/html;charset=UTF-8"/>
 	<jsp:directive.page pageEncoding="UTF-8"/>
 
@@ -13,39 +12,31 @@
 
 		<!-- Bootstrap -->
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-		<bootstrap-util:load-styles-bootstrap />
-		<util:load-scripts/>
-		<bootstrap-util:load-scripts-bootstrap />
-
+		<!-- <util:load-scripts/> -->
 		<spring:message code="application_name" htmlEscape="false" var="app_name"/>
 		<title>
             <spring:message arguments="${app_name}" code="welcome_h3"/>
         </title>
+        <link type="text/css" href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet" />
+        <spring:url value="/resources/assets/css/vendor/bootstrap.min.css" var="bootstrap_css_url" />
+        <link rel="stylesheet" type="text/css" href="${bootstrap_css_url}" />
+
+        <spring:url value="/resources/assets/css/font-awesome.min.css" var="fa_css_url" />
+        <link rel="stylesheet" type="text/css" href="${fa_css_url}" />
+        
+        <spring:url value="/resources/assets/css/vendor/bootstrap.min.css" var="bootstrap_css_url" />
+        <link rel="stylesheet" type="text/css" href="${bootstrap_css_url}" />
+        
+        
 	</head>
 
-  	<body class="tundra spring">
-   		<!-- Fixed navbar dropdown -->
-	<header class="navbar navbar-inverse navbar-fixed-top">
-		<div class="container">
-      <tiles:insertAttribute ignore="true" name="header" />
-			<tiles:insertAttribute ignore="true" name="menu" />
-		</div>
-	</header>
-
-	<div class="container">
-		<div id="main">
-			<dialog:message-box />
+  	<body>
+		<!-- START CONTAINER -->
 			<tiles:insertAttribute name="body" />
-		</div>
-		<!-- /main -->
-	</div>
-	<!--/.container-->
+		<!-- END CONTAINER -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"><!-- required for FF3 and Opera --></script>
 
-	<!-- Footer
-    	================================================== -->
-	<footer class="bs-footer" role="contentinfo">
-		<tiles:insertAttribute ignore="true" name="footer" />
-	</footer>
+		<spring:url value="/resources/assets/js/vendor/bootstrap.min.js" var="bootstrap_js_url" />	
+	    <script src="${bootstrap_js_url}" type="text/javascript"><!-- required for FF3 and Opera --></script>
 	</body>
 </html>
