@@ -27,6 +27,9 @@
         <spring:url value="/resources/assets/css/vendor/bootstrap.min.css" var="bootstrap_css_url" />
         <link rel="stylesheet" type="text/css" href="${bootstrap_css_url}" />
         
+        <spring:url value="/resources/assets/css/tablon.css" var="tablon_css_url" />
+        <link rel="stylesheet" type="text/css" href="${tablon_css_url}" />
+        
         
 	</head>
 

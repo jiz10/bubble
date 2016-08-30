@@ -1,0 +1,9 @@
+body {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background-color: #eee;
+
+  background-image: url('../img/login3.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
