@@ -23,3 +23,17 @@ body {
 	-moz-box-shadow: 13px 16px 11px 2px rgba(0,0,0,0.13);
 	box-shadow: 13px 16px 11px 2px rgba(0,0,0,0.13);
 }
+
+
+
+.testing{
+	
+background: rgba(24,115,201,1);
+background: -moz-linear-gradient(left, rgba(24,115,201,1) 29%, rgba(24,115,201,1) 40%, rgba(20,92,173,1) 75%, rgba(20,92,173,1) 84%);
+background: -webkit-gradient(left top, right top, color-stop(29%, rgba(24,115,201,1)), color-stop(40%, rgba(24,115,201,1)), color-stop(75%, rgba(20,92,173,1)), color-stop(84%, rgba(20,92,173,1)));
+background: -webkit-linear-gradient(left, rgba(24,115,201,1) 29%, rgba(24,115,201,1) 40%, rgba(20,92,173,1) 75%, rgba(20,92,173,1) 84%);
+background: -o-linear-gradient(left, rgba(24,115,201,1) 29%, rgba(24,115,201,1) 40%, rgba(20,92,173,1) 75%, rgba(20,92,173,1) 84%);
+background: -ms-linear-gradient(left, rgba(24,115,201,1) 29%, rgba(24,115,201,1) 40%, rgba(20,92,173,1) 75%, rgba(20,92,173,1) 84%);
+background: linear-gradient(to right, rgba(24,115,201,1) 29%, rgba(24,115,201,1) 40%, rgba(20,92,173,1) 75%, rgba(20,92,173,1) 84%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1873c9', endColorstr='#145cad', GradientType=1 );
+}

@@ -1,15 +1,12 @@
 <div class="col-sm-3">
-	<div class="sect" style="height: 200px; width: 350px; position: fixed;">Hola</div>
+	<div class="sect" style="height: 200px; width: 350px;">Hola</div>
 	<br />
 	<br />
 	<br />
 	<br />
 	<br />
-	<br />
-	<br />
-	<br />
-	<br />
+	
 	<br />
 	<div class="sect"
-		style="height: 400px; position: fixed; width: 350px; margin-top: auto;">chau</div>
+		style="height: 400px; width: 350px; margin-top: auto;">chau</div>
 </div>
