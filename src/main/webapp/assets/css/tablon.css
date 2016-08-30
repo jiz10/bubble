@@ -7,3 +7,19 @@ body {
   background-repeat: no-repeat;
   background-attachment: fixed;
 }
+
+.sect{
+	background-color: rgba(255, 255, 255, 0.5);
+}
+
+.tweet{
+	width:70%;
+	margin-left:10%;
+}
+
+.radio{
+	
+	 -webkit-box-shadow: 13px 16px 11px 2px rgba(0,0,0,0.13);
+	-moz-box-shadow: 13px 16px 11px 2px rgba(0,0,0,0.13);
+	box-shadow: 13px 16px 11px 2px rgba(0,0,0,0.13);
+}

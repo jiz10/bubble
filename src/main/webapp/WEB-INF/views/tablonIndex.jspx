@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div class="well" xmlns:c="http://java.sun.com/jsp/jstl/core"
+	xmlns:fn="http://java.sun.com/jsp/jstl/functions"
+	xmlns:jsp="http://java.sun.com/JSP/Page"
+	xmlns:spring="http://www.springframework.org/tags"
+	xmlns:util="urn:jsptagdir:/WEB-INF/tags/jquery/util"
+	xmlns:field="urn:jsptagdir:/WEB-INF/tags/jquery/form/fields"
+	version="2.0">
+	<jsp:directive.page contentType="text/html;charset=UTF-8" />
+	<jsp:output omit-xml-declaration="yes" />
+
+
+		<div class="col-sm-6 sect">
+			<div style="height:1600px;">
+				<br />
+				<ol>
+					<li class="card text-xs-center tweet radio">
+							<div class="input-group">
+								<input type="text" class="form-control" placeholder="Que estaría pasando?" />
+								<span class="input-group-btn">
+									<button class="btn btn-secondary" type="button">=)</button>
+								</span>
+							</div>
+					</li>
+
+					<li class="card text-xs-center tweet">
+						<div class="card-header">
+							<h4 class="card-title">@JSGO</h4>
+						</div>
+						<div class="card-block">
+							<p class="card-text">With supporting text below as a natural
+								lead-in to additional content.</p>
+						</div>
+						<div class="card-footer text-muted">2 days ago</div>
+					</li>
+					<li class="card text-xs-center tweet">
+						<div class="card-header">
+							<h4 class="card-title">@JSGO</h4>
+						</div>
+						<div class="card-block">
+							<p class="card-text">With supporting text below as a natural
+								lead-in to additional content.</p>
+						</div>
+						<div class="card-footer text-muted">2 days ago</div>
+					</li>
+
+			</ol>
+				
+				
+
+			</div>
+		</div>
+
+
+
+</div>

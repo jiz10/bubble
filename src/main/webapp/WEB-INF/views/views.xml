@@ -19,6 +19,6 @@
   </definition>
     
   <definition extends="Tablon" name="index">
-    <put-attribute name="body" value="/WEB-INF/views/index.jspx"/>
+    <put-attribute name="body" value="/WEB-INF/views/tablonIndex.jspx"/>
   </definition>
 </tiles-definitions>
