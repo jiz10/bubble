@@ -30,6 +30,7 @@
         <spring:url value="/resources/assets/css/tablon.css" var="tablon_css_url" />
         <link rel="stylesheet" type="text/css" href="${tablon_css_url}" />
         
+        <tiles:insertAttribute name="JsCss" ignore="true" />
         
 	</head>
 

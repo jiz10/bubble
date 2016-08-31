@@ -37,3 +37,5 @@ focus --class ~.domain.Validacion
 field string userName
 field string --fieldName password
 web mvc all --package ~.web
+// Spring Roo 1.3.1.RELEASE [rev 8cb81a3] log opened at 2016-08-31 10:10:52
+web mvc all --package ~.web
