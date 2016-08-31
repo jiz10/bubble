@@ -9,10 +9,10 @@
 	<jsp:directive.page contentType="text/html;charset=UTF-8" />
 	<jsp:output omit-xml-declaration="yes" />
 
-	<nav class="navbar navbar-fixed-top testing">
+	<nav class="navbar navbar-fixed-top " style="background-color:white;box-shadow: 2px 2px 2px #888888;">
 
 		<!-- Brand -->
-		<h3 class="navbar-brand" style="color:white;" >Bubble</h3>
+		<h3 class="navbar-brand" >Bubble</h3>
 
 		<!-- Links -->
 		<ul class="nav navbar-nav pull-xs-right" >

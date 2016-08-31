@@ -24,7 +24,7 @@
 					</li>
 
 					<li class="card text-xs-center tweet radio">
-						<div class="card-header">
+						<div class="card-header" style="background-color:rgba(24,115,201,1);color:white;">
 							<h4 class="card-title">@JSGO</h4>
 						</div>
 						<div class="card-block">
@@ -34,8 +34,8 @@
 						<div class="card-footer text-muted">2 days ago</div>
 					</li>
 					<li class="card text-xs-center tweet radio">
-						<div class="card-header">
-							<h4 class="card-title">@JSGO</h4>
+						<div class="card-header" style="background-color:grey;color:white;">
+							<h4 class="card-title">@JIZ</h4>
 						</div>
 						<div class="card-block">
 							<p class="card-text">With supporting text below as a natural

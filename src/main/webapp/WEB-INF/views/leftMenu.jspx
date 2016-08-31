@@ -1,12 +1,87 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div class="well" xmlns:c="http://java.sun.com/jsp/jstl/core"
+	xmlns:fn="http://java.sun.com/jsp/jstl/functions"
+	xmlns:jsp="http://java.sun.com/JSP/Page"
+	xmlns:spring="http://www.springframework.org/tags"
+	xmlns:util="urn:jsptagdir:/WEB-INF/tags/jquery/util"
+	xmlns:field="urn:jsptagdir:/WEB-INF/tags/jquery/form/fields"
+	version="2.0">
+	<jsp:directive.page contentType="text/html;charset=UTF-8" />
+	<jsp:output omit-xml-declaration="yes" />
+	
 <div class="col-sm-3">
-	<div class=" box effect2" style="height: 200px; width: 350px;"><h3>Hola</h3></div>
-	<br />
-	<br />
-	<br />
-	<br />
-	<br />
+	<div style="height: 200px; width: 350px;">
+
+
+		<div>
+			<div style="position:relative;top:20px; border-radius: 8px;">
+				<div class="col-sm-12">
+					<div class="col-sm-6" >
+						<spring:url value="/resources/assets/img/default-profile.png" var="profile_image_url" />
+						<img src="${profile_image_url}" class="img-circle" style="width:90px;height:90px;position:relative;bottom:20px;"/>
+					</div>
+					<div class="col-sm-6">
+						<br/><b>J Sebastian GO</b><br />
+						<span> @jsgo90</span>
+					</div>
+					
+					
+				</div>
+
+				<div id="profile">
+					<ul class="list-group" style="background-color:white !important;">
+						
+						<li class="list-group-item">
+							<span><b>Tweets</b></span>
+							<br />
+							<span style="color:blue"><b>23</b></span>
+						</li>
+						
+						<li class="list-group-item">
+							<span><b>Seguiendo</b></span>
+							<br />
+							<span style="color:blue"><b>23</b></span>
+						</li>
+						
+						<li class="list-group-item">
+							<span><b>Seguidores</b></span>
+							<br />
+							<span style="color:blue"><b>23</b></span>
+						</li>
+
+					</ul>
+				</div>
+
+			</div>
+		</div>
+
+	</div>
+
 	
 	<br />
-	<div class="sect"
-		style="height: 400px; width: 350px; margin-top: auto;">chau</div>
+	<div style="height: 200px; width: 350px;">
+
+			<div id="tendencias">
+				<ul class="list-group" style="background-color: white !important;">
+
+					<li class="list-group-item">
+						<span style="color: blue">#BuenMiercoles</span>
+					</li>
+
+					<li class="list-group-item">
+						<span style="color: blue">#QueOnda</span>
+					</li>
+
+					<li class="list-group-item">
+						<span style="color: blue">#WhastappMike</span>
+					</li>
+
+				</ul>
+			</div>
+
+
+
+		</div>
+</div>
+
 </div>
