@@ -39,6 +39,16 @@ body {
 	 border:none;
 }
 
+.nav-item{
+	
+	padding-right:10px;
+}
+
+.newTweet{
+	
+	background-color: #008CBA;
+	color:white !important;
+}
 
 
 

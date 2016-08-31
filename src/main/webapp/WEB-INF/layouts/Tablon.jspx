@@ -42,6 +42,7 @@
 			<tiles:insertAttribute name="left" />
 			<tiles:insertAttribute name="body" />
 			<tiles:insertAttribute name="right" />
+			<tiles:insertAttribute name="newMsgModal" />
 			</div>
 		<!-- END CONTAINER -->
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"><!-- required for FF3 and Opera --></script>

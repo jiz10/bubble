@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <!DOCTYPE tiles-definitions PUBLIC "-//Apache Software Foundation//DTD Tiles Configuration 2.1//EN" "http://tiles.apache.org/dtds/tiles-config_2_1.dtd">
 <tiles-definitions>
-    <definition extends="Bubble" name="mensajes/list">
+    <definition extends="Tablon" name="mensajes/list">
         <put-attribute name="body" value="/WEB-INF/views/mensajes/list.jspx"/>
     </definition>
-<definition extends="Bubble" name="mensajes/show">
+<definition extends="Tablon" name="mensajes/show">
         <put-attribute name="body" value="/WEB-INF/views/mensajes/show.jspx"/>
     </definition>
-<definition extends="Bubble" name="mensajes/create">
+<definition extends="Tablon" name="mensajes/create">
         <put-attribute name="body" value="/WEB-INF/views/mensajes/create.jspx"/>
     </definition>
-<definition extends="Bubble" name="mensajes/update">
+<definition extends="Tablon" name="mensajes/update">
         <put-attribute name="body" value="/WEB-INF/views/mensajes/update.jspx"/>
     </definition>
 </tiles-definitions>
