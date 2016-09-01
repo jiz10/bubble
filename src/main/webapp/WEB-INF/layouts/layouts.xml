@@ -23,8 +23,7 @@
    <put-attribute name="header" value="/WEB-INF/views/top.jspx" />
    <put-attribute name="left" value="/WEB-INF/views/leftMenu.jspx" />
    <put-attribute name="right" value="/WEB-INF/views/rightMenu.jspx" />
-   <put-attribute name="JsCss" value="/WEB-INF/views/JsCss.jspx"/>
-   <put-attribute name="newMsgModal" value="/WEB-INF/views/mensajes/newMsgModal.jspx"/>  
+   <put-attribute name="newMsgModal" value="/WEB-INF/views/mensajes/newMsgModal.jspx"/> 
   </definition>
 
 </tiles-definitions>
