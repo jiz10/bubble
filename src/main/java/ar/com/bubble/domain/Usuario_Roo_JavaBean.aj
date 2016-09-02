@@ -4,6 +4,7 @@
 package ar.com.bubble.domain;
 
 import ar.com.bubble.domain.Usuario;
+import ar.com.bubble.domain.Validacion;
 
 privileged aspect Usuario_Roo_JavaBean {
     
@@ -21,6 +22,14 @@ privileged aspect Usuario_Roo_JavaBean {
     
     public void Usuario.setNombre(String nombre) {
         this.nombre = nombre;
+    }
+    
+    public Validacion Usuario.getUserData() {
+        return this.userData;
+    }
+    
+    public void Usuario.setUserData(Validacion userData) {
+        this.userData = userData;
     }
     
 }

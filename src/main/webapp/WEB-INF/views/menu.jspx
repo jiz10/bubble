@@ -26,5 +26,13 @@
         <menu:category id="c_controller" z="nj8Dm3hojIyIEyPkwE1UMDIs+K8=">
             <menu:item id="i_controller__tablonindex_id" messageCode="global_generic" url="/tablon/index" z="CkekvtNayLMems34lSzokEghTFM="/>
         </menu:category>
+        <menu:category id="c_pm" z="jd8pdTuH43/GGz992dlA6F4/vw0=">
+            <menu:item id="i_pm_new" messageCode="global_menu_new" url="/pms?form" z="zBCwRB/NXsqTAl9Md7fkOgA5vSc="/>
+            <menu:item id="i_pm_list" messageCode="global_menu_list" url="/pms?page=1&amp;size=${empty param.size ? 10 : param.size}" z="02mrCVKLzA+7h4OLNvsQAEHge3w="/>
+        </menu:category>
+        <menu:category id="c_tweet" z="c1s0t868+3WJKEa6P7pIcvf+QLA=">
+            <menu:item id="i_tweet_new" messageCode="global_menu_new" url="/tweets?form" z="/qclo5f8GRKqem2DenBFyfKEP9U="/>
+            <menu:item id="i_tweet_list" messageCode="global_menu_list" url="/tweets?page=1&amp;size=${empty param.size ? 10 : param.size}" z="g3gl6jswkaRLXe5+eBWJ/BRN2FA="/>
+        </menu:category>
     </menu:menu>
 </div>

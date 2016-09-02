@@ -4,8 +4,8 @@
     <jsp:output omit-xml-declaration="yes"/>
     <page:list id="pl_ar_com_bubble_domain_Mensaje" items="${mensajes}" z="KIEIOXGHcbaOVUOJBci0ApafYQk=">
         <table:table data="${mensajes}" id="l_ar_com_bubble_domain_Mensaje" path="/mensajes" z="7yTnoAiHi5C0O4FY7op+Y+zmks0=">
-            <table:column id="c_ar_com_bubble_domain_Mensaje_tags" property="tags" z="j4cUVUqlFYaoFb6pYAy9fvfCAVQ="/>
             <table:column id="c_ar_com_bubble_domain_Mensaje_autor" property="autor" z="Q4+1loZ2KOP01l5r9XZXRdJ1OKU="/>
+            <table:column id="c_ar_com_bubble_domain_Mensaje_contenido" property="contenido" z="lXzccNKVMjuimwSxp8K+dW55F8U="/>
         </table:table>
     </page:list>
 </div>

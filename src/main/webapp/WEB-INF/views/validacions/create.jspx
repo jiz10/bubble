@@ -3,9 +3,8 @@
     <jsp:directive.page contentType="text/html;charset=UTF-8"/>
     <jsp:output omit-xml-declaration="yes"/>
     <form:create id="fc_ar_com_bubble_domain_Validacion" modelAttribute="validacion" path="/validacions" render="${empty dependencies}" z="TzEwGfImHcy0FlhHSSS3GHgV3g4=">
-        <field:select field="usuario" id="c_ar_com_bubble_domain_Validacion_usuario" itemValue="id" items="${usuarios}" path="/usuarios" z="hy7gMrSIveHqz9fhBWCiIC4tk0k="/>
-        <field:input field="userName" id="c_ar_com_bubble_domain_Validacion_userName" z="9bD+u7/fH7D7J2luMHEpbcqUlGU="/>
         <field:input field="password" id="c_ar_com_bubble_domain_Validacion_password" z="SqVcdy68buFaIMo//Ke4spMJijs="/>
+        <field:input field="user" id="c_ar_com_bubble_domain_Validacion_user" z="kj98Q8ozLW0kbQeeJLDcmzXFAp4="/>
     </form:create>
     <form:dependency dependencies="${dependencies}" id="d_ar_com_bubble_domain_Validacion" render="${not empty dependencies}" z="GECkskbbu9okdZ23ORFQ5II47Qw="/>
 </div>

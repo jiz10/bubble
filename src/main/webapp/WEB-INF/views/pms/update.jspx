@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:form="urn:jsptagdir:/WEB-INF/tags/form" xmlns:jsp="http://java.sun.com/JSP/Page" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <form:update id="fu_ar_com_bubble_domain_PM" modelAttribute="PM_" path="/pms" versionField="Version" z="QENviuumVt3UJfKeL1IMXxaUAj8=">
+        <field:select field="autor" id="c_ar_com_bubble_domain_PM_autor" itemValue="id" items="${usuarios}" path="/usuarios" z="ieXDjfoHuqly/GxZdiB+7FJgdLs="/>
+        <field:input field="contenido" id="c_ar_com_bubble_domain_PM_contenido" z="POSwEGkAxjLrqGn+Xl4qsv38Cj8="/>
+        <field:select field="destinatario" id="c_ar_com_bubble_domain_PM_destinatario" itemValue="id" items="${usuarios}" path="/usuarios" z="BiD46qob4B8vgPyjH3Qr7eNbbXw="/>
+    </form:update>
+</div>

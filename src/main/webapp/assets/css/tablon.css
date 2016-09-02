@@ -24,7 +24,10 @@ body {
   clear: both;
   display: block;
   content: "";
+}
 
+ul {
+	  list-style:none;
 }
 
 #profile .list-group-item {

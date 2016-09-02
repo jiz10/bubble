@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <!DOCTYPE tiles-definitions PUBLIC "-//Apache Software Foundation//DTD Tiles Configuration 2.1//EN" "http://tiles.apache.org/dtds/tiles-config_2_1.dtd">
 <tiles-definitions>
-    <definition extends="default" name="validacions/list">
+    <definition extends="Tablon" name="validacions/list">
         <put-attribute name="body" value="/WEB-INF/views/validacions/list.jspx"/>
     </definition>
-<definition extends="default" name="validacions/show">
+<definition extends="Tablon" name="validacions/show">
         <put-attribute name="body" value="/WEB-INF/views/validacions/show.jspx"/>
     </definition>
-<definition extends="default" name="validacions/create">
+<definition extends="Tablon" name="validacions/create">
         <put-attribute name="body" value="/WEB-INF/views/validacions/create.jspx"/>
     </definition>
-<definition extends="default" name="validacions/update">
+<definition extends="Tablon" name="validacions/update">
         <put-attribute name="body" value="/WEB-INF/views/validacions/update.jspx"/>
     </definition>
 </tiles-definitions>

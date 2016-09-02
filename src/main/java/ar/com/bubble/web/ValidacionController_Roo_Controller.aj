@@ -3,7 +3,6 @@
 
 package ar.com.bubble.web;
 
-import ar.com.bubble.domain.Usuario;
 import ar.com.bubble.domain.Validacion;
 import ar.com.bubble.web.ValidacionController;
 import java.io.UnsupportedEncodingException;
@@ -87,7 +86,6 @@ privileged aspect ValidacionController_Roo_Controller {
     
     void ValidacionController.populateEditForm(Model uiModel, Validacion validacion) {
         uiModel.addAttribute("validacion", validacion);
-        uiModel.addAttribute("usuarios", Usuario.findAllUsuarios());
     }
     
     String ValidacionController.encodeUrlPathSegment(String pathSegment, HttpServletRequest httpServletRequest) {

@@ -5,6 +5,7 @@
     <form:create id="fc_ar_com_bubble_domain_Usuario" modelAttribute="usuario" path="/usuarios" render="${empty dependencies}" z="Sob8VpNlO+C3Kayp8ZNIag8auIY=">
         <field:input field="nombre" id="c_ar_com_bubble_domain_Usuario_nombre" z="4PeLap0vpQyyaa5p61S4GR6A/EA="/>
         <field:input field="apellido" id="c_ar_com_bubble_domain_Usuario_apellido" z="4wunXqObBW6KcjiAaiSD5lipTIg="/>
+        <field:select field="userData" id="c_ar_com_bubble_domain_Usuario_userData" itemValue="id" items="${validacions}" path="/validacions" z="VVLRI2/L4xTCu5Xd2FPsvvoPP+Q="/>
     </form:create>
     <form:dependency dependencies="${dependencies}" id="d_ar_com_bubble_domain_Usuario" render="${not empty dependencies}" z="pFvc3PsuxzE5PwVzbdQthGlLINg="/>
 </div>

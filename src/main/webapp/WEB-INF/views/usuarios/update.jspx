@@ -5,5 +5,6 @@
     <form:update id="fu_ar_com_bubble_domain_Usuario" modelAttribute="usuario" path="/usuarios" versionField="Version" z="DtPbZqc7MpwY4hjwAVVUu6j0qH0=">
         <field:input field="nombre" id="c_ar_com_bubble_domain_Usuario_nombre" z="4PeLap0vpQyyaa5p61S4GR6A/EA="/>
         <field:input field="apellido" id="c_ar_com_bubble_domain_Usuario_apellido" z="4wunXqObBW6KcjiAaiSD5lipTIg="/>
+        <field:select field="userData" id="c_ar_com_bubble_domain_Usuario_userData" itemValue="id" items="${validacions}" path="/validacions" z="VVLRI2/L4xTCu5Xd2FPsvvoPP+Q="/>
     </form:update>
 </div>

@@ -4,8 +4,10 @@
 package ar.com.bubble.web;
 
 import ar.com.bubble.domain.Mensaje;
+import ar.com.bubble.domain.PM;
 import ar.com.bubble.domain.Rol;
 import ar.com.bubble.domain.Tag;
+import ar.com.bubble.domain.Tweet;
 import ar.com.bubble.domain.Usuario;
 import ar.com.bubble.domain.Validacion;
 import ar.com.bubble.web.ApplicationConversionServiceFactoryBean;
@@ -20,7 +22,7 @@ privileged aspect ApplicationConversionServiceFactoryBean_Roo_ConversionService 
     public Converter<Mensaje, String> ApplicationConversionServiceFactoryBean.getMensajeToStringConverter() {
         return new org.springframework.core.convert.converter.Converter<ar.com.bubble.domain.Mensaje, java.lang.String>() {
             public String convert(Mensaje mensaje) {
-                return "(no displayable fields)";
+                return new StringBuilder().append(mensaje.getContenido()).toString();
             }
         };
     }
@@ -37,6 +39,30 @@ privileged aspect ApplicationConversionServiceFactoryBean_Roo_ConversionService 
         return new org.springframework.core.convert.converter.Converter<java.lang.String, ar.com.bubble.domain.Mensaje>() {
             public ar.com.bubble.domain.Mensaje convert(String id) {
                 return getObject().convert(getObject().convert(id, Long.class), Mensaje.class);
+            }
+        };
+    }
+    
+    public Converter<PM, String> ApplicationConversionServiceFactoryBean.getPMToStringConverter() {
+        return new org.springframework.core.convert.converter.Converter<ar.com.bubble.domain.PM, java.lang.String>() {
+            public String convert(PM pM) {
+                return new StringBuilder().append(pM.getContenido()).toString();
+            }
+        };
+    }
+    
+    public Converter<Long, PM> ApplicationConversionServiceFactoryBean.getIdToPMConverter() {
+        return new org.springframework.core.convert.converter.Converter<java.lang.Long, ar.com.bubble.domain.PM>() {
+            public ar.com.bubble.domain.PM convert(java.lang.Long id) {
+                return PM.findPM(id);
+            }
+        };
+    }
+    
+    public Converter<String, PM> ApplicationConversionServiceFactoryBean.getStringToPMConverter() {
+        return new org.springframework.core.convert.converter.Converter<java.lang.String, ar.com.bubble.domain.PM>() {
+            public ar.com.bubble.domain.PM convert(String id) {
+                return getObject().convert(getObject().convert(id, Long.class), PM.class);
             }
         };
     }
@@ -89,6 +115,30 @@ privileged aspect ApplicationConversionServiceFactoryBean_Roo_ConversionService 
         };
     }
     
+    public Converter<Tweet, String> ApplicationConversionServiceFactoryBean.getTweetToStringConverter() {
+        return new org.springframework.core.convert.converter.Converter<ar.com.bubble.domain.Tweet, java.lang.String>() {
+            public String convert(Tweet tweet) {
+                return new StringBuilder().append(tweet.getContenido()).toString();
+            }
+        };
+    }
+    
+    public Converter<Long, Tweet> ApplicationConversionServiceFactoryBean.getIdToTweetConverter() {
+        return new org.springframework.core.convert.converter.Converter<java.lang.Long, ar.com.bubble.domain.Tweet>() {
+            public ar.com.bubble.domain.Tweet convert(java.lang.Long id) {
+                return Tweet.findTweet(id);
+            }
+        };
+    }
+    
+    public Converter<String, Tweet> ApplicationConversionServiceFactoryBean.getStringToTweetConverter() {
+        return new org.springframework.core.convert.converter.Converter<java.lang.String, ar.com.bubble.domain.Tweet>() {
+            public ar.com.bubble.domain.Tweet convert(String id) {
+                return getObject().convert(getObject().convert(id, Long.class), Tweet.class);
+            }
+        };
+    }
+    
     public Converter<Usuario, String> ApplicationConversionServiceFactoryBean.getUsuarioToStringConverter() {
         return new org.springframework.core.convert.converter.Converter<ar.com.bubble.domain.Usuario, java.lang.String>() {
             public String convert(Usuario usuario) {
@@ -116,7 +166,7 @@ privileged aspect ApplicationConversionServiceFactoryBean_Roo_ConversionService 
     public Converter<Validacion, String> ApplicationConversionServiceFactoryBean.getValidacionToStringConverter() {
         return new org.springframework.core.convert.converter.Converter<ar.com.bubble.domain.Validacion, java.lang.String>() {
             public String convert(Validacion validacion) {
-                return new StringBuilder().append(validacion.getUserName()).append(' ').append(validacion.getPassword()).toString();
+                return new StringBuilder().append(validacion.getUser()).append(' ').append(validacion.getPassword()).toString();
             }
         };
     }
@@ -141,12 +191,18 @@ privileged aspect ApplicationConversionServiceFactoryBean_Roo_ConversionService 
         registry.addConverter(getMensajeToStringConverter());
         registry.addConverter(getIdToMensajeConverter());
         registry.addConverter(getStringToMensajeConverter());
+        registry.addConverter(getPMToStringConverter());
+        registry.addConverter(getIdToPMConverter());
+        registry.addConverter(getStringToPMConverter());
         registry.addConverter(getRolToStringConverter());
         registry.addConverter(getIdToRolConverter());
         registry.addConverter(getStringToRolConverter());
         registry.addConverter(getTagToStringConverter());
         registry.addConverter(getIdToTagConverter());
         registry.addConverter(getStringToTagConverter());
+        registry.addConverter(getTweetToStringConverter());
+        registry.addConverter(getIdToTweetConverter());
+        registry.addConverter(getStringToTweetConverter());
         registry.addConverter(getUsuarioToStringConverter());
         registry.addConverter(getIdToUsuarioConverter());
         registry.addConverter(getStringToUsuarioConverter());

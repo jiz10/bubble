@@ -1,13 +1,29 @@
 $(document).ready(function(){
 	
+	$("body").on("click","#newTweet", function(event){
+		event.preventDefault();
+		var msgContent = $("#tweetContent").val();
+		var url = "mensajes/";
+		var data = JSON.stringify({contenido:msgContent});
+		$.ajax({
+			type:'POST',
+			contentType: 'application/json',
+			headers: {Accept: 'application/json'},
+			url: url,
+			data: data,
+			success: function() {},
+			complete: function() {
+				fillMsgList();
+			}
+		});
+	});
 	
 	$(document).ready(function(){
-		alert("hello");
 		fillMsgList();
 	});
 	
 	function fillMsgList(){
-		var url = "mensajes/";
+		var url = "tweets/";
 		$.ajax({
 			type:'GET',
 			headers: {Accept: 'application/json'},
@@ -17,19 +33,21 @@ $(document).ready(function(){
 				var pasteHTML = "";
 				$.each(data, function(i, val){
 					
-					pasteHTML += "<li class='card text-xs-center tweet radio'>";
-					pasteHTML += "<div class='card-header'>";
-					pasteHTML += "<h4 class='card-title'>@JSGO</h4>";	
+					pasteHTML += "<li class=' tweet radio'>";
+					pasteHTML += "<div class='card'style='max-width: 32rem;'>";
+					pasteHTML += "<div class='card-block' style='width:200px !important'>";
+					pasteHTML += "<h4 class='card-title'>" + val.autor.userData.user + "</h4>";
+					pasteHTML += "<p class='card-text'>" + val.contenido + "</p>";
+
+					pasteHTML += "<a href='#' class='card-link'>button1</a>"
+					pasteHTML += "<a href='#' class='card-link'>button2</a>"
 					pasteHTML += "</div>";
-					pasteHTML += "<div class='card-block'>";
-					pasteHTML += "<p class='card-text'>hola</p>";	
-					pasteHTML += "</div>";
-					pasteHTML += "<div class='card-footer text-muted'>2 days ago</div>";
+
+					pasteHTML += "</div>";	
 					pasteHTML += "</li>";
 				
 				});
-				$("#tablonMsg").append(pasteHTML);
-				alert("help");
+				$("#tablonMsg").html(pasteHTML);
 			}
 		});
 	}

@@ -3,8 +3,7 @@
     <jsp:directive.page contentType="text/html;charset=UTF-8"/>
     <jsp:output omit-xml-declaration="yes"/>
     <page:show id="ps_ar_com_bubble_domain_Validacion" object="${validacion}" path="/validacions" z="8Wnwrf2ggsExBcZdODtsZ0pkVao=">
-        <field:display field="usuario" id="s_ar_com_bubble_domain_Validacion_usuario" object="${validacion}" z="Etg2OLZQKe7SxMotZQAyskWZcfc="/>
-        <field:display field="userName" id="s_ar_com_bubble_domain_Validacion_userName" object="${validacion}" z="cMElEBTlbHCGegC5XJTQVgHVlxk="/>
         <field:display field="password" id="s_ar_com_bubble_domain_Validacion_password" object="${validacion}" z="/Tor7fQtSrN6IV+oXGUhlkbb4PY="/>
+        <field:display field="user" id="s_ar_com_bubble_domain_Validacion_user" object="${validacion}" z="V4+IaB6L/XqvAq8Sct87iZjJghE="/>
     </page:show>
 </div>

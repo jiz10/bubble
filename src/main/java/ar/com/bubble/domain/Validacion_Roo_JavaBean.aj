@@ -3,25 +3,16 @@
 
 package ar.com.bubble.domain;
 
-import ar.com.bubble.domain.Usuario;
 import ar.com.bubble.domain.Validacion;
 
 privileged aspect Validacion_Roo_JavaBean {
     
-    public Usuario Validacion.getUsuario() {
-        return this.usuario;
+    public String Validacion.getUser() {
+        return this.user;
     }
     
-    public void Validacion.setUsuario(Usuario usuario) {
-        this.usuario = usuario;
-    }
-    
-    public String Validacion.getUserName() {
-        return this.userName;
-    }
-    
-    public void Validacion.setUserName(String userName) {
-        this.userName = userName;
+    public void Validacion.setUser(String user) {
+        this.user = user;
     }
     
     public String Validacion.getPassword() {

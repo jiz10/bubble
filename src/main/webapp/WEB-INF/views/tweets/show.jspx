@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:show id="ps_ar_com_bubble_domain_Tweet" object="${tweet}" path="/tweets" z="34RcfYQkpeJ3R1vsZc9H2oY4RcY=">
+        <field:display field="autor" id="s_ar_com_bubble_domain_Tweet_autor" object="${tweet}" z="vWJgrk8UbCe6fg7AI4peBZq1ylY="/>
+        <field:display field="contenido" id="s_ar_com_bubble_domain_Tweet_contenido" object="${tweet}" z="HeWci/P01YsjQ1hEH25aK7VravA="/>
+        <field:display field="tags" id="s_ar_com_bubble_domain_Tweet_tags" object="${tweet}" z="YZPs4EquTSDbUuRmGOibMo6eNAY="/>
+        <field:display field="isRetweet" id="s_ar_com_bubble_domain_Tweet_isRetweet" object="${tweet}" z="l5Oio1FydrGpjmmTBW1PrZTzqUU="/>
+    </page:show>
+</div>

@@ -4,9 +4,7 @@
 package ar.com.bubble.domain;
 
 import ar.com.bubble.domain.Mensaje;
-import ar.com.bubble.domain.Tag;
 import ar.com.bubble.domain.Usuario;
-import java.util.Set;
 
 privileged aspect Mensaje_Roo_JavaBean {
     
@@ -18,12 +16,12 @@ privileged aspect Mensaje_Roo_JavaBean {
         this.autor = autor;
     }
     
-    public Set<Tag> Mensaje.getTags() {
-        return this.tags;
+    public String Mensaje.getContenido() {
+        return this.contenido;
     }
     
-    public void Mensaje.setTags(Set<Tag> tags) {
-        this.tags = tags;
+    public void Mensaje.setContenido(String contenido) {
+        this.contenido = contenido;
     }
     
 }

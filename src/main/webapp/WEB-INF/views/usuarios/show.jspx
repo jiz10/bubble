@@ -5,5 +5,6 @@
     <page:show id="ps_ar_com_bubble_domain_Usuario" object="${usuario}" path="/usuarios" z="cXEUwl/x2u35GFFW0Tq7gyp59KQ=">
         <field:display field="nombre" id="s_ar_com_bubble_domain_Usuario_nombre" object="${usuario}" z="YDCpCkMRs2DL9F4tpcXDjy2jne4="/>
         <field:display field="apellido" id="s_ar_com_bubble_domain_Usuario_apellido" object="${usuario}" z="1aVu3tGRUgF4AYXd9+v+bju2Zfg="/>
+        <field:display field="userData" id="s_ar_com_bubble_domain_Usuario_userData" object="${usuario}" z="EjxMu9qCtkfGeuIL7ainH0N9j+Q="/>
     </page:show>
 </div>

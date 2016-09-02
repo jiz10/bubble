@@ -6,6 +6,7 @@
         <table:table data="${usuarios}" id="l_ar_com_bubble_domain_Usuario" path="/usuarios" z="4+uB/XKYduuG2psSPJvdUDUwCpc=">
             <table:column id="c_ar_com_bubble_domain_Usuario_nombre" property="nombre" z="QVpfemE1Sl4EXhQWXZPVKgYYcMc="/>
             <table:column id="c_ar_com_bubble_domain_Usuario_apellido" property="apellido" z="cVu1lWr0/b9ZV6sQNQ5qYulOTlQ="/>
+            <table:column id="c_ar_com_bubble_domain_Usuario_userData" property="userData" z="9Kfa0KvqmKkiojFVtzNXx3TBXuo="/>
         </table:table>
     </page:list>
 </div>

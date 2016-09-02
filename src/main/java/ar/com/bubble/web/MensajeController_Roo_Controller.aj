@@ -4,7 +4,6 @@
 package ar.com.bubble.web;
 
 import ar.com.bubble.domain.Mensaje;
-import ar.com.bubble.domain.Tag;
 import ar.com.bubble.domain.Usuario;
 import ar.com.bubble.web.MensajeController;
 import java.io.UnsupportedEncodingException;
@@ -88,7 +87,6 @@ privileged aspect MensajeController_Roo_Controller {
     
     void MensajeController.populateEditForm(Model uiModel, Mensaje mensaje) {
         uiModel.addAttribute("mensaje", mensaje);
-        uiModel.addAttribute("tags", Tag.findAllTags());
         uiModel.addAttribute("usuarios", Usuario.findAllUsuarios());
     }
     

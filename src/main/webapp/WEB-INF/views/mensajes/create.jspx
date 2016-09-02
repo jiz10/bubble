@@ -3,8 +3,8 @@
     <jsp:directive.page contentType="text/html;charset=UTF-8"/>
     <jsp:output omit-xml-declaration="yes"/>
     <form:create id="fc_ar_com_bubble_domain_Mensaje" modelAttribute="mensaje" path="/mensajes" render="${empty dependencies}" z="QA4M44VpxIGx6dbDAfwcvvtWCbg=">
-        <field:select field="tags" id="c_ar_com_bubble_domain_Mensaje_tags" itemValue="id" items="${tags}" multiple="true" path="/tags" z="TQteOIy+Fji2s09RBOS7MWl/OCk="/>
         <field:select field="autor" id="c_ar_com_bubble_domain_Mensaje_autor" itemValue="id" items="${usuarios}" path="/usuarios" z="ZSXe6zCeE/UduIAVESRit0hJcYE="/>
+        <field:input field="contenido" id="c_ar_com_bubble_domain_Mensaje_contenido" z="bfADhK8AWnfk1afHx78gOr0lPGI="/>
     </form:create>
     <form:dependency dependencies="${dependencies}" id="d_ar_com_bubble_domain_Mensaje" render="${not empty dependencies}" z="FHSEqKEjB5lVAbihd+hZMGyEyKU="/>
 </div>

@@ -23,6 +23,5 @@ public class Mensaje {
 
     /**
      */
-    @ManyToMany(cascade = CascadeType.ALL)
-    private Set<Tag> tags = new HashSet<Tag>();
+    private String contenido;
 }

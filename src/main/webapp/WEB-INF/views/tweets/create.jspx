@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:c="http://java.sun.com/jsp/jstl/core" xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:form="urn:jsptagdir:/WEB-INF/tags/form" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:spring="http://www.springframework.org/tags" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <form:create id="fc_ar_com_bubble_domain_Tweet" modelAttribute="tweet" path="/tweets" render="${empty dependencies}" z="vExZWwsx232FQAFZfSmWH5pCdqI=">
+        <field:select field="autor" id="c_ar_com_bubble_domain_Tweet_autor" itemValue="id" items="${usuarios}" path="/usuarios" z="uDnyEzXw7uxk2BHzvpRIwQjiTDE="/>
+        <field:input field="contenido" id="c_ar_com_bubble_domain_Tweet_contenido" z="ujZuvzp2GTAhi4mO5aavKgxHqL0="/>
+        <field:select field="tags" id="c_ar_com_bubble_domain_Tweet_tags" itemValue="id" items="${tags}" multiple="true" path="/tags" z="oqu6XzdeY0NTvItnok0aGAVYJQo="/>
+        <field:checkbox field="isRetweet" id="c_ar_com_bubble_domain_Tweet_isRetweet" z="l0+PlsKXEsJm4iHB+YvPDfmHeII="/>
+    </form:create>
+    <form:dependency dependencies="${dependencies}" id="d_ar_com_bubble_domain_Tweet" render="${not empty dependencies}" z="0yFO8u/VC8FCgcpJKZRlSjG2OBY="/>
+</div>

@@ -10,27 +10,25 @@
 	<jsp:output omit-xml-declaration="yes" />
 
 
-		<div class="col-sm-6 sect">
-			<div style="height:1600px;">
-				<br />
-				<ol id="tablonMsg">
-					<li class="card text-xs-center tweet radio">
-							<div class="input-group">
-								<input type="text" class="form-control" placeholder="Que estaría pasando?" />
-								<span class="input-group-btn">
-									<button class="btn btn-secondary" type="button">=)</button>
-								</span>
-							</div>
-					</li>
+	<div class="col-sm-6 sect">
+		<div style="height: 1600px;">
+			<br />
+			<ul>
+				<li class="card text-xs-center tweet radio">
+					<div class="input-group">
+						<input type="text" class="form-control"
+							placeholder="Que estaría pasando?" /> <span
+							class="input-group-btn">
+							<button class="btn btn-secondary" type="button">=)</button>
+						</span>
+					</div>
+				</li>
+			</ul>
+			<ul id="tablonMsg"></ul>
 
 
-					
-
-			</ol>
-
-			
-		</div>
-			
 		</div>
 
-</div>   
+	</div>
+
+</div>
