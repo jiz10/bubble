@@ -3,7 +3,7 @@ $(document).ready(function(){
 	$("body").on("click","#newTweet", function(event){
 		event.preventDefault();
 		var msgContent = $("#tweetContent").val();
-		var url = "mensajes/";
+		var url = "tweets/";
 		var data = JSON.stringify({contenido:msgContent});
 		$.ajax({
 			type:'POST',
@@ -35,10 +35,12 @@ $(document).ready(function(){
 					
 					pasteHTML += "<li class=' tweet radio'>";
 					pasteHTML += "<div class='card'style='max-width: 32rem;'>";
-					pasteHTML += "<div class='card-block' style='width:200px !important'>";
-					pasteHTML += "<h4 class='card-title'>" + val.autor.userData.user + "</h4>";
-					pasteHTML += "<p class='card-text'>" + val.contenido + "</p>";
-
+					pasteHTML += "<div class='card-block' style='width:500px !important'>";
+					pasteHTML += "<span class='qoutes'><h4 class='card-title cardTitle blueFont'>" + val.autor.userData.user + "</h4>" + "<h6 class='text-muted cardTitle'>2/9/16</h6></span>";
+					pasteHTML += "<blockquote class='blockquote'>";
+					pasteHTML += "<p class='card-text m-b-0 for140chars'>";
+					pasteHTML += val.contenido;
+					pasteHTML += "</p></blockquote>";
 					pasteHTML += "<a href='#' class='card-link'>button1</a>"
 					pasteHTML += "<a href='#' class='card-link'>button2</a>"
 					pasteHTML += "</div>";

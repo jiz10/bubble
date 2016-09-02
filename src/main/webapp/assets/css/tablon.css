@@ -53,5 +53,51 @@ ul {
 	color:white !important;
 }
 
+.cardTitle{
+	
+	display:inline;
+	margin-right:10px;
+}
+
+h6{
+	
+	font-size: small;
+}
+
+#rightPanel{
+
+	
+	margin-top:20px;
+	background-color:white;
+	border-radius: 10px;
+}
+
+#leftPanel{
+	
+	margin-top:20px;
+	background-color:white;
+	border-radius: 10px;
+	
+}
+
+#leftPanel2{
+	
+	margin-top:20px;
+	background-color:white;
+	border-radius: 10px;
+	
+}
+
+.for140chars{
+	
+	word-wrap: break-word;
+}
+
+.blueFont{
+	
+	color:#008CBA;
+}
+
+
 
 

@@ -9,16 +9,15 @@
 	<jsp:directive.page contentType="text/html;charset=UTF-8" />
 	<jsp:output omit-xml-declaration="yes" />
 	
-<div class="col-sm-3">
-	<div style="height: 200px; width: 350px;">
-
+<div  class="col-sm-3">
+	<div id="leftPanel2"  style="height: 200px; width: 350px;">
 
 		<div>
 			<div style="position:relative;top:20px; border-radius: 8px;">
 				<div class="col-sm-12">
 					<div class="col-sm-6" >
 						<spring:url value="/resources/assets/img/default-profile.png" var="profile_image_url" />
-						<img src="${profile_image_url}" class="img-circle" style="width:90px;height:90px;position:relative;bottom:20px;"/>
+						<img src="${profile_image_url}" class="img-circle" style="width:90px;height:90px;"/>
 					</div>
 					<div class="col-sm-6">
 						<br/><b>J Sebastian GO</b><br />
@@ -28,7 +27,7 @@
 					
 				</div>
 
-				<div id="profile">
+				<div id="profile" class="leftPanel">
 					<ul class="list-group" style="background-color:white !important;">
 						
 						<li class="list-group-item">
@@ -59,8 +58,9 @@
 
 	
 	<br />
-	<div style="height: 200px; width: 350px;">
-
+	<div id="leftPanel" style="height: 200px; width: 350px;margin-top:10px;">
+			<br />
+			<h3 style="text-align:center;margin-top:10px;">Tendencia</h3>
 			<div id="tendencias">
 				<ul class="list-group" style="background-color: white !important;">
 
