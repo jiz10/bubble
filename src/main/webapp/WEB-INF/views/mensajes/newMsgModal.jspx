@@ -11,9 +11,12 @@
       </div>
       <div class="modal-body">
         <form action="tweet"  method="POST">
-        	<input type="text" class="input-sm" name="tweetContent"
+        	<input type="text" class="input-sm form-control" name="tweetContent"
 				placeholder="write less than 140 chars" required="required" id="tweetContent" />
-        	<button class="btn" value="submit" id="newTweet">TWEET</button>
+			<br />
+        	<button class="btn btn-success btn-md pull-right" value="submit" id="newTweet">TWEET</button>
+        	
+        	<br /><br />
         </form>
       </div>
     </div>

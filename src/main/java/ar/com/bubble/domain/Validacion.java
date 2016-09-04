@@ -6,10 +6,9 @@ import org.springframework.roo.addon.json.RooJson;
 
 @RooJavaBean
 @RooToString
-@RooJpaActiveRecord
 @RooJson
+@RooJpaActiveRecord(finders = { "findValidacionsByUserEquals" })
 public class Validacion {
-
 
     /**
      */

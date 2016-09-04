@@ -13,6 +13,7 @@ $(document).ready(function(){
 			data: data,
 			success: function() {},
 			complete: function() {
+				$('#msgModal').modal('hide');
 				fillMsgList();
 			}
 		});
@@ -35,7 +36,7 @@ $(document).ready(function(){
 					
 					pasteHTML += "<li class=' tweet radio'>";
 					pasteHTML += "<div class='card'style='max-width: 32rem;'>";
-					pasteHTML += "<div class='card-block' style='width:500px !important'>";
+					pasteHTML += "<div class='card-block' style='width:430px !important'>";
 					pasteHTML += "<span class='qoutes'><h4 class='card-title cardTitle blueFont'>" + val.autor.userData.user + "</h4>" + "<h6 class='text-muted cardTitle'>2/9/16</h6></span>";
 					pasteHTML += "<blockquote class='blockquote'>";
 					pasteHTML += "<p class='card-text m-b-0 for140chars'>";
