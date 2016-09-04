@@ -9,9 +9,13 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.util.UriComponentsBuilder;
 
+import com.google.gson.Gson;
+
 import java.util.ArrayList;
+import java.util.Calendar;
 import java.util.List;
 
 import javax.persistence.TypedQuery;
@@ -50,11 +54,27 @@ public class TweetController {
             	            	
             }
             tweet.setAutor(autor.get(0));
+            tweet.setCreatedAt(Calendar.getInstance());
             
             tweet.persist();
             RequestMapping a = (RequestMapping) getClass().getAnnotation(RequestMapping.class);
             headers.add("Location",uriBuilder.path(a.value()[0]+"/"+tweet.getId().toString()).build().toUriString());
             return new ResponseEntity<String>(headers, HttpStatus.CREATED);
+        } catch (Exception e) {
+            return new ResponseEntity<String>("{\"ERROR\":"+e.getMessage()+"\"}", headers, HttpStatus.INTERNAL_SERVER_ERROR);
+        }
+    }
+	
+	@RequestMapping(headers = "Accept=application/json")
+    @ResponseBody
+    public ResponseEntity<String> listJson() {
+        HttpHeaders headers = new HttpHeaders();
+        headers.add("Content-Type", "application/json; charset=utf-8");
+        try {
+            List<Tweet> result = Tweet.findAllTweets();
+            Gson gson = new Gson();
+            String properTweet = gson.toJson(result);
+            return new ResponseEntity<String>(properTweet, headers, HttpStatus.OK);
         } catch (Exception e) {
             return new ResponseEntity<String>("{\"ERROR\":"+e.getMessage()+"\"}", headers, HttpStatus.INTERNAL_SERVER_ERROR);
         }

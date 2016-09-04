@@ -10,6 +10,8 @@ import ar.com.bubble.web.TweetController;
 import java.io.UnsupportedEncodingException;
 import javax.servlet.http.HttpServletRequest;
 import javax.validation.Valid;
+import org.joda.time.format.DateTimeFormat;
+import org.springframework.context.i18n.LocaleContextHolder;
 import org.springframework.ui.Model;
 import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -40,6 +42,7 @@ privileged aspect TweetController_Roo_Controller {
     
     @RequestMapping(value = "/{id}", produces = "text/html")
     public String TweetController.show(@PathVariable("id") Long id, Model uiModel) {
+        addDateTimeFormatPatterns(uiModel);
         uiModel.addAttribute("tweet", Tweet.findTweet(id));
         uiModel.addAttribute("itemId", id);
         return "tweets/show";
@@ -56,6 +59,7 @@ privileged aspect TweetController_Roo_Controller {
         } else {
             uiModel.addAttribute("tweets", Tweet.findAllTweets(sortFieldName, sortOrder));
         }
+        addDateTimeFormatPatterns(uiModel);
         return "tweets/list";
     }
     
@@ -86,8 +90,13 @@ privileged aspect TweetController_Roo_Controller {
         return "redirect:/tweets";
     }
     
+    void TweetController.addDateTimeFormatPatterns(Model uiModel) {
+        uiModel.addAttribute("tweet_createdat_date_format", DateTimeFormat.patternForStyle("M-", LocaleContextHolder.getLocale()));
+    }
+    
     void TweetController.populateEditForm(Model uiModel, Tweet tweet) {
         uiModel.addAttribute("tweet", tweet);
+        addDateTimeFormatPatterns(uiModel);
         uiModel.addAttribute("tags", Tag.findAllTags());
         uiModel.addAttribute("usuarios", Usuario.findAllUsuarios());
     }

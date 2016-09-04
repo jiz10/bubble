@@ -9,6 +9,8 @@ import ar.com.bubble.web.MensajeController;
 import java.io.UnsupportedEncodingException;
 import javax.servlet.http.HttpServletRequest;
 import javax.validation.Valid;
+import org.joda.time.format.DateTimeFormat;
+import org.springframework.context.i18n.LocaleContextHolder;
 import org.springframework.ui.Model;
 import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -39,6 +41,7 @@ privileged aspect MensajeController_Roo_Controller {
     
     @RequestMapping(value = "/{id}", produces = "text/html")
     public String MensajeController.show(@PathVariable("id") Long id, Model uiModel) {
+        addDateTimeFormatPatterns(uiModel);
         uiModel.addAttribute("mensaje", Mensaje.findMensaje(id));
         uiModel.addAttribute("itemId", id);
         return "mensajes/show";
@@ -55,6 +58,7 @@ privileged aspect MensajeController_Roo_Controller {
         } else {
             uiModel.addAttribute("mensajes", Mensaje.findAllMensajes(sortFieldName, sortOrder));
         }
+        addDateTimeFormatPatterns(uiModel);
         return "mensajes/list";
     }
     
@@ -85,8 +89,13 @@ privileged aspect MensajeController_Roo_Controller {
         return "redirect:/mensajes";
     }
     
+    void MensajeController.addDateTimeFormatPatterns(Model uiModel) {
+        uiModel.addAttribute("mensaje_createdat_date_format", DateTimeFormat.patternForStyle("M-", LocaleContextHolder.getLocale()));
+    }
+    
     void MensajeController.populateEditForm(Model uiModel, Mensaje mensaje) {
         uiModel.addAttribute("mensaje", mensaje);
+        addDateTimeFormatPatterns(uiModel);
         uiModel.addAttribute("usuarios", Usuario.findAllUsuarios());
     }
     

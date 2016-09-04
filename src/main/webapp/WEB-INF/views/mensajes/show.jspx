@@ -5,5 +5,6 @@
     <page:show id="ps_ar_com_bubble_domain_Mensaje" object="${mensaje}" path="/mensajes" z="nTfxkd/DhNpCtxMJtwO0q6mOWDI=">
         <field:display field="autor" id="s_ar_com_bubble_domain_Mensaje_autor" object="${mensaje}" z="WqVc0YlR+dCbtRBQSJRxLzk7QRY="/>
         <field:display field="contenido" id="s_ar_com_bubble_domain_Mensaje_contenido" object="${mensaje}" z="pF2A5Of0FWOXF7CTGdmUFKLlt5E="/>
+        <field:display calendar="true" dateTimePattern="${mensaje_createdat_date_format}" field="createdAt" id="s_ar_com_bubble_domain_Mensaje_createdAt" object="${mensaje}" z="2TORU9+CSlnlcpAr04fFB1JS/sQ="/>
     </page:show>
 </div>

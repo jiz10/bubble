@@ -5,6 +5,7 @@ package ar.com.bubble.domain;
 
 import ar.com.bubble.domain.Mensaje;
 import ar.com.bubble.domain.Usuario;
+import java.util.Calendar;
 
 privileged aspect Mensaje_Roo_JavaBean {
     
@@ -22,6 +23,14 @@ privileged aspect Mensaje_Roo_JavaBean {
     
     public void Mensaje.setContenido(String contenido) {
         this.contenido = contenido;
+    }
+    
+    public Calendar Mensaje.getCreatedAt() {
+        return this.createdAt;
+    }
+    
+    public void Mensaje.setCreatedAt(Calendar createdAt) {
+        this.createdAt = createdAt;
     }
     
 }

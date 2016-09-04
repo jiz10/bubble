@@ -22,7 +22,7 @@ privileged aspect ApplicationConversionServiceFactoryBean_Roo_ConversionService 
     public Converter<Mensaje, String> ApplicationConversionServiceFactoryBean.getMensajeToStringConverter() {
         return new org.springframework.core.convert.converter.Converter<ar.com.bubble.domain.Mensaje, java.lang.String>() {
             public String convert(Mensaje mensaje) {
-                return new StringBuilder().append(mensaje.getContenido()).toString();
+                return new StringBuilder().append(mensaje.getContenido()).append(' ').append(mensaje.getCreatedAt()).toString();
             }
         };
     }
@@ -46,7 +46,7 @@ privileged aspect ApplicationConversionServiceFactoryBean_Roo_ConversionService 
     public Converter<PM, String> ApplicationConversionServiceFactoryBean.getPMToStringConverter() {
         return new org.springframework.core.convert.converter.Converter<ar.com.bubble.domain.PM, java.lang.String>() {
             public String convert(PM pM) {
-                return new StringBuilder().append(pM.getContenido()).toString();
+                return new StringBuilder().append(pM.getContenido()).append(' ').append(pM.getCreatedAt()).toString();
             }
         };
     }
@@ -118,7 +118,7 @@ privileged aspect ApplicationConversionServiceFactoryBean_Roo_ConversionService 
     public Converter<Tweet, String> ApplicationConversionServiceFactoryBean.getTweetToStringConverter() {
         return new org.springframework.core.convert.converter.Converter<ar.com.bubble.domain.Tweet, java.lang.String>() {
             public String convert(Tweet tweet) {
-                return new StringBuilder().append(tweet.getContenido()).toString();
+                return new StringBuilder().append(tweet.getContenido()).append(' ').append(tweet.getCreatedAt()).toString();
             }
         };
     }

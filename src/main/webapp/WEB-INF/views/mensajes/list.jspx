@@ -6,6 +6,7 @@
         <table:table data="${mensajes}" id="l_ar_com_bubble_domain_Mensaje" path="/mensajes" z="7yTnoAiHi5C0O4FY7op+Y+zmks0=">
             <table:column id="c_ar_com_bubble_domain_Mensaje_autor" property="autor" z="Q4+1loZ2KOP01l5r9XZXRdJ1OKU="/>
             <table:column id="c_ar_com_bubble_domain_Mensaje_contenido" property="contenido" z="lXzccNKVMjuimwSxp8K+dW55F8U="/>
+            <table:column calendar="true" dateTimePattern="${mensaje_createdat_date_format}" id="c_ar_com_bubble_domain_Mensaje_createdAt" property="createdAt" z="IEi7YXtwyr3LPTCSAclAvD6YyUs="/>
         </table:table>
     </page:list>
 </div>

@@ -5,6 +5,7 @@
     <form:create id="fc_ar_com_bubble_domain_Mensaje" modelAttribute="mensaje" path="/mensajes" render="${empty dependencies}" z="QA4M44VpxIGx6dbDAfwcvvtWCbg=">
         <field:select field="autor" id="c_ar_com_bubble_domain_Mensaje_autor" itemValue="id" items="${usuarios}" path="/usuarios" z="ZSXe6zCeE/UduIAVESRit0hJcYE="/>
         <field:input field="contenido" id="c_ar_com_bubble_domain_Mensaje_contenido" z="bfADhK8AWnfk1afHx78gOr0lPGI="/>
+        <field:datetime dateTimePattern="${mensaje_createdat_date_format}" field="createdAt" id="c_ar_com_bubble_domain_Mensaje_createdAt" z="8dm2kaA1I7i+TfFq7cJe7M1BO6Q="/>
     </form:create>
     <form:dependency dependencies="${dependencies}" id="d_ar_com_bubble_domain_Mensaje" render="${not empty dependencies}" z="FHSEqKEjB5lVAbihd+hZMGyEyKU="/>
 </div>
